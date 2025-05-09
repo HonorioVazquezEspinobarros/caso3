@@ -1,0 +1,251 @@
+/* Reset básico */
+body {
+  /* Elimina el margen y el relleno predeterminados del navegador */
+  margin: 0;
+  padding: 0;
+  
+  /* Define la fuente base para la página */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  /* Establece un color de fondo claro */
+  background-color: #f4f6f8;
+  
+  /* Define el color de texto predeterminado */
+  color: #333;
+}
+
+/* Encabezado y pie */
+header, footer {
+  /* Fondo oscuro para el encabezado y pie de página */
+  background-color: #343a40;
+  
+  /* Color de texto blanco */
+  color: white;
+  
+  /* Relleno alrededor del contenido */
+  padding: 15px 20px;
+  
+  /* Alineación centrada del texto */
+  text-align: center;
+}
+
+/* Sección principal */
+section {
+  /* Limita el ancho máximo de la sección */
+  max-width: 800px;
+  
+  /* Centra la sección en la página */
+  margin: 40px auto;
+  
+  /* Relleno interno */
+  padding: 20px;
+  
+  /* Fondo blanco para la sección */
+  background-color: white;
+  
+  /* Bordes redondeados para la sección */
+  border-radius: 12px;
+  
+  /* Sombra sutil alrededor de la sección */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Tabla del formulario */
+.form-table {
+  /* Hace que la tabla ocupe el 100% del ancho disponible */
+  width: 100%;
+  
+  /* Separación entre las celdas */
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.form-table td {
+  /* Añade relleno a las celdas */
+  padding: 10px;
+  
+  /* Alineación vertical superior del contenido de las celdas */
+  vertical-align: top;
+}
+
+/* Estilo de las etiquetas de los formularios */
+label {
+  /* Define el texto en negrita */
+  font-weight: bold;
+  
+  /* Hace que las etiquetas se muestren como bloques */
+  display: inline-block;
+  
+  /* Añade espacio debajo de las etiquetas */
+  margin-bottom: 5px;
+}
+
+/* Estilo de los campos de texto */
+input[type="text"] {
+  /* Establece el ancho al 100% */
+  width: 100%;
+  
+  /* Añade relleno dentro del campo */
+  padding: 10px;
+  
+  /* Define el tamaño de la fuente */
+  font-size: 1rem;
+  
+  /* Borde gris claro alrededor del campo */
+  border: 1px solid #ccc;
+  
+  /* Bordes redondeados para los campos */
+  border-radius: 6px;
+  
+  /* Para asegurar que el relleno no afecte el tamaño total del campo */
+  box-sizing: border-box;
+  
+  /* Transición suave al cambiar el color del borde */
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto al enfocarse en un campo de texto */
+input[type="text"]:focus {
+  /* Cambia el color del borde cuando el campo está enfocado */
+  border-color: #0066cc;
+  
+  /* Elimina el contorno predeterminado */
+  outline: none;
+}
+
+/* Botón */
+.btn {
+  /* Fondo azul */
+  background-color: #0066cc;
+  
+  /* Texto blanco */
+  color: white;
+  
+  /* Texto en negrita */
+  font-weight: bold;
+  
+  /* Relleno en el botón */
+  padding: 12px 24px;
+  
+  /* Elimina el borde del botón */
+  border: none;
+  
+  /* Bordes redondeados */
+  border-radius: 8px;
+  
+  /* Cursor en forma de mano al pasar sobre el botón */
+  cursor: pointer;
+  
+  /* Transición suave al cambiar el color de fondo */
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.btn:hover {
+  /* Cambia el color de fondo cuando el ratón pasa sobre el botón */
+  background-color: #004a99;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  /* Define el ancho máximo */
+  width: 90%;
+  max-width: 800px;
+  
+  /* Centra el contenedor */
+  margin: 40px auto;
+  
+  /* Fondo blanco */
+  background-color: #fff;
+  
+  /* Relleno dentro del contenedor */
+  padding: 20px;
+  
+  /* Bordes redondeados */
+  border-radius: 12px;
+  
+  /* Sombra sutil alrededor del contenedor */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Fila dentro del formulario */
+.form-row {
+  /* Espacio entre cada fila */
+  margin-bottom: 20px;
+}
+
+/* Estilo para los elementos <span> que muestran la respuesta */
+span {
+  /* Tamaño de la fuente */
+  font-size: 1rem;
+  
+  /* Mostrar como bloque */
+  display: inline-block;
+  
+  /* Añadir relleno alrededor del texto */
+  padding: 10px;
+  
+  /* Fondo gris claro */
+  background-color: #f1f1f1;
+  
+  /* Bordes redondeados */
+  border-radius: 6px;
+  
+  /* Ancho completo */
+  width: 100%;
+}
+
+/* Contenedor para los botones de acción */
+.form-actions {
+  /* Usar un diseño flexible para distribuir los botones */
+  display: flex;
+  justify-content: space-between;
+  
+  /* Añadir espacio encima */
+  margin-top: 20px;
+}
+
+/* Estilo general para los botones */
+button {
+  /* Relleno dentro del botón */
+  padding: 12px 24px;
+  
+  /* Bordes redondeados */
+  border-radius: 6px;
+  
+  /* Elimina el borde del botón */
+  border: none;
+  
+  /* Tamaño de la fuente */
+  font-size: 1rem;
+  
+  /* Cursor en forma de mano */
+  cursor: pointer;
+  
+  /* Transición suave al cambiar el color de fondo */
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre cualquier botón */
+button:hover {
+  /* Cambia el color de fondo cuando el ratón pasa sobre el botón */
+  background-color: #004a99;
+}
+
+/* Estilo específico para el botón "Anterior" */
+.btn-back {
+  /* Fondo rojo */
+  background-color: #ff6347;
+  
+  /* Texto blanco */
+  color: white;
+}
+
+/* Estilo específico para el botón "Volver a encuestar" */
+.btn-reset {
+  /* Fondo verde */
+  background-color: #28a745;
+  
+  /* Texto blanco */
+  color: white;
+}
